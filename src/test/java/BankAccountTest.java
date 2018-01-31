@@ -19,6 +19,6 @@ public class BankAccountTest {
 		BankAccount underTest = new BankAccount("1234","",0.0);
 		String check = underTest.getAccountNumber();
 		assertEquals("1234",check);
-	}
+	}//t
 
 }
