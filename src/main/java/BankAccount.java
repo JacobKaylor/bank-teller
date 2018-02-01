@@ -1,32 +1,19 @@
+import java.math.BigDecimal;
 
 public class BankAccount {
-	private String AccountNumber;
-	private String type;
-	private double balance;
+	private String number;
+
 	
 	public BankAccount() {
 		
 	}
-
-	public BankAccount(String AccountNumber, String type, double balance) {
-		this.AccountNumber = AccountNumber;
-		this.type = type;
-		this.balance = balance;
+	public BankAccount(String accountNumber, String type, BigDecimal balance) {
+		this.number = accountNumber;
 	}
-
-	public String getAccountNumber() {
-		
-		return AccountNumber;
-	}
-
-	public String getType() {
-		
-		return type;
-	}
-
-	public double getBalance() {
-		
-		return balance;
+  
+	public String getNumber() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

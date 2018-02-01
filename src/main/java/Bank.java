@@ -6,27 +6,23 @@ import java.util.Set;
 public class Bank {
 	
 
-	private Map<String,String> accounts = new HashMap<String,String>();
+	private Map<String,BankAccount> accounts = new HashMap<>();
 	 
 	Set<String> accountNum = accounts.keySet();
-	
-	public Collection<BankAccount> accounts(){
-		return null;
+
+	private BankAccount account;
+
+
+
+	public void add(BankAccount account) {
+		accounts.put(account.getNumber(), account);	
 	}
 
-	public String getAccountNum() {
-		return "1111";
+	public BankAccount findAccount(String accountNumber) {
 		
-		
-	}
-
-
-	public void addAccount(BankAccount bankAccount) {
-		
-		
+		return accounts.get(accountNumber);
 	}
 
 
-	
 
 }
